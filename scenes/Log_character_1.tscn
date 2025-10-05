@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://d2pgacugw8yo2" path="res://Resources/images/character/animations/walk_east.png" id="6_422vh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ff0m"]
-radius = 6.0
-height = 16.0
+radius = 3.0
+height = 12.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_psg8n"]
 atlas = ExtResource("4_422vh")
@@ -219,7 +219,7 @@ Nazwa = "Franek"
 animated_sprite = NodePath("AnimatedSprite2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0)
+position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_1ff0m")
 
 [node name="Camera2D" parent="." instance=ExtResource("3_1ff0m")]

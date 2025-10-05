@@ -3,7 +3,7 @@ class_name Enemy
 
 @export var enemy_name: String = "Mob"
 @export var max_hp: int = 5
-@export var speed: float = 400.0
+@export var speed: float = 24.0
 @export var damage: int = 3
 @export var xp_reward: int = 1
 
@@ -21,7 +21,7 @@ func _physics_process(delta: float) -> void:
 		return
 	
 	var direction = (player.global_position - global_position).normalized()
-	velocity = direction * speed * delta
+	velocity = direction * speed
 	move_and_slide()
 
 

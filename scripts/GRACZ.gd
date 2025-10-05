@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name Gracz
 
 @export var Nazwa: String = ""
-@export var character_speed: float = 1000
+@export var character_speed: float = 60
 @export var multiplier_speed: float = 1
 @export var animated_sprite: AnimatedSprite2D
 
@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("lewo", "prawo", "gora", "dol")
-	velocity = direction * character_speed *delta* multiplier_speed
+	velocity = direction * character_speed * multiplier_speed
 	move_and_slide()
 	handle_animations(direction)
 
@@ -23,7 +23,6 @@ func handle_animations(dir: Vector2) -> void:
 	if dir.y < 0:
 		animated_sprite.play("gora")
 		return
-
 	if dir.y > 0:
 		animated_sprite.play("dol")
 		return
