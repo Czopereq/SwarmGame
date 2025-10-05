@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bixuy5ol76x37"]
+
+[ext_resource type="Script" uid="uid://freg7vvmohds" path="res://scenes/rotator.gd" id="1_r08b0"]
+
+[node name="rotator" type="Marker2D"]
+script = ExtResource("1_r08b0")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

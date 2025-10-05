@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://brekjfs721psk"]
+
+[ext_resource type="Script" uid="uid://5iiqhmvb7ich" path="res://scripts/axe.gd" id="1_h5gjv"]
+[ext_resource type="Texture2D" uid="uid://csgrkap46l4r3" path="res://Resources/items/axe.png" id="1_jfbs7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h5gjv"]
+radius = 3.0
+
+[node name="Axe" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_h5gjv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_h5gjv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_jfbs7")

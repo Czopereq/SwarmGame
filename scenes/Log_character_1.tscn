@@ -1,6 +1,7 @@
-[gd_scene load_steps=35 format=3 uid="uid://di83s3bx1dqt"]
+[gd_scene load_steps=36 format=3 uid="uid://di83s3bx1dqt"]
 
 [ext_resource type="Script" uid="uid://ldeck8aglrs8" path="res://scripts/log_character_1.gd" id="1_5nn7y"]
+[ext_resource type="PackedScene" uid="uid://bixuy5ol76x37" path="res://scenes/rotator.tscn" id="2_tohdf"]
 [ext_resource type="PackedScene" uid="uid://dyg7a0vqttjma" path="res://scenes/Camera.tscn" id="3_1ff0m"]
 [ext_resource type="PackedScene" uid="uid://b2sxoey4m7wvg" path="res://scenes/xp_grabber.tscn" id="3_wch15"]
 [ext_resource type="Texture2D" uid="uid://dback8k4xfl8u" path="res://Resources/images/character/animations/walk_south.png" id="4_422vh"]
@@ -218,6 +219,8 @@ script = ExtResource("1_5nn7y")
 Nazwa = "Franek"
 animated_sprite = NodePath("AnimatedSprite2D")
 
+[node name="rotator" parent="." instance=ExtResource("2_tohdf")]
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -1)
 shape = SubResource("CapsuleShape2D_1ff0m")
@@ -229,6 +232,7 @@ rotation_smoothing_enabled = true
 [node name="XpGrabber" parent="." instance=ExtResource("3_wch15")]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_psg8n")
 animation = &"dol"
