@@ -16,7 +16,7 @@ func _ready() -> void:
 	add_to_group("enemies")
 	player = get_tree().get_first_node_in_group("Player")
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if player == null:
 		return
 	
@@ -36,5 +36,5 @@ func die() -> void:
 	xp.global_position = global_position
 	xp.player = player
 	xp.value = xp_reward
-	get_tree().get_child("XP").add_child(xp)
-	queue_free()
+	get_node("/root/main/XP").add_child(xp)
+	call_deferred("queue_free")

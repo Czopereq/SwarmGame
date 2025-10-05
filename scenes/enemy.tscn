@@ -10,6 +10,8 @@ height = 8.0
 [node name="Enemy" type="CharacterBody2D"]
 top_level = true
 collision_layer = 2
+floor_stop_on_slope = false
+floor_block_on_wall = false
 script = ExtResource("1_kha5q")
 enemy_name = "Mob1"
 metadata/_custom_type_script = "uid://c70s3xd28egef"

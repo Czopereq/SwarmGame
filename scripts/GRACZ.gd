@@ -9,7 +9,7 @@ class_name Gracz
 func _ready() -> void:
 	GameManager.Postac = Nazwa
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	var direction = Input.get_vector("lewo", "prawo", "gora", "dol")
 	velocity = direction * character_speed * multiplier_speed
 	move_and_slide()

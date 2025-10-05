@@ -19,6 +19,7 @@ func heal(amount: int):
 	Hp = min(Hp + amount, MaxHp)
 
 func add_exp(amount:int):
+	print(Xp)
 	Xp += amount * Xp_multiplayer
 	if Xp >= LevelUp[Level - 1]:
 		Xp = 0
