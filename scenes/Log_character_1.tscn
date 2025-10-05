@@ -232,7 +232,6 @@ rotation_smoothing_enabled = true
 [node name="XpGrabber" parent="." instance=ExtResource("3_wch15")]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-visible = false
 scale = Vector2(0.25, 0.25)
 sprite_frames = SubResource("SpriteFrames_psg8n")
 animation = &"dol"

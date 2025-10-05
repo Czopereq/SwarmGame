@@ -3,7 +3,7 @@ class_name Enemy
 
 @export var enemy_name: String = "Mob"
 @export var max_hp: int = 5
-@export var speed: float = 24.0
+@export var speed: float = 7
 @export var damage: int = 3
 @export var xp_reward: int = 1
 

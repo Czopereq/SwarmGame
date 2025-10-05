@@ -4,7 +4,7 @@ var dir:Vector2
 var speed:float = 140
 var rotation_
 
-func _init() -> void:
+func _ready() -> void:
 	dir = Vector2.RIGHT.rotated(rotation_)
 
 func _physics_process(delta: float) -> void:

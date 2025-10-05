@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name Gracz
 
 @export var Nazwa: String = ""
-@export var character_speed: float = 60
+@export var character_speed: float = 20
 @export var multiplier_speed: float = 1
 @export var animated_sprite: AnimatedSprite2D
 
