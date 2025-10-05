@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Staty" load_steps=2 format=3 uid="uid://bjbywsl0370po"]
+
+[ext_resource type="Script" uid="uid://b0v5w8m28ar0x" path="res://resourcy/Player_res.gd" id="1_ygqrs"]
+
+[resource]
+script = ExtResource("1_ygqrs")
+metadata/_custom_type_script = "uid://b0v5w8m28ar0x"

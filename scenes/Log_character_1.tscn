@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://di83s3bx1dqt"]
+
+[ext_resource type="Script" uid="uid://ldeck8aglrs8" path="res://scripts/log_character_1.gd" id="1_5nn7y"]
+[ext_resource type="Texture2D" uid="uid://fxrtttrdyo7q" path="res://Resources/images/character_1.png" id="2_wch15"]
+[ext_resource type="PackedScene" uid="uid://dyg7a0vqttjma" path="res://scenes/Camera.tscn" id="3_1ff0m"]
+[ext_resource type="PackedScene" uid="uid://b2sxoey4m7wvg" path="res://scenes/xp_grabber.tscn" id="3_wch15"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ff0m"]
+radius = 6.0
+height = 16.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["Player"]]
+script = ExtResource("1_5nn7y")
+Nazwa = "Franek"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("CapsuleShape2D_1ff0m")
+
+[node name="Character!" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_wch15")
+
+[node name="Camera2D" parent="." instance=ExtResource("3_1ff0m")]
+position_smoothing_enabled = true
+rotation_smoothing_enabled = true
+
+[node name="XpGrabber" parent="." instance=ExtResource("3_wch15")]
