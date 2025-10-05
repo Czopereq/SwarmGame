@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfgdr6pfhljo1"
-path="res://.godot/imported/Enemy_1.png-5779d87dff7a71204f75aa5cf833c89f.ctex"
+uid="uid://dback8k4xfl8u"
+path="res://.godot/imported/walk_south.png-9b4d31ffde550a372a9ae52f673d9250.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/images/enemies/Enemy_1.png"
-dest_files=["res://.godot/imported/Enemy_1.png-5779d87dff7a71204f75aa5cf833c89f.ctex"]
+source_file="res://Resources/images/character/animations/walk_south.png"
+dest_files=["res://.godot/imported/walk_south.png-9b4d31ffde550a372a9ae52f673d9250.ctex"]
 
 [params]
 
