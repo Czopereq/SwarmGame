@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpmvfjrbv6nei"]
+
+[ext_resource type="Texture2D" uid="uid://dkreldacwmbc4" path="res://Resources/images/card_deck.png" id="1_rtr3u"]
+
+[node name="ChoseUpgradeGUI" type="HBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(320, 320)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="BoxContainer"]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+texture = ExtResource("1_rtr3u")
+stretch_mode = 5
+
+[node name="BoxContainer2" type="BoxContainer" parent="."]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="BoxContainer2"]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+texture = ExtResource("1_rtr3u")
+stretch_mode = 5
+
+[node name="BoxContainer3" type="BoxContainer" parent="."]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="BoxContainer3"]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+texture = ExtResource("1_rtr3u")
+stretch_mode = 5

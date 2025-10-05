@@ -7,6 +7,7 @@ class_name Gracz
 @export var animated_sprite: AnimatedSprite2D
 
 func _ready() -> void:
+	add_to_group("Player")
 	GameManager.Postac = Nazwa
 
 func _physics_process(_delta: float) -> void:

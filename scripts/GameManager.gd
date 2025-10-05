@@ -9,6 +9,7 @@ var GameStarted:bool = true
 
 func _ready() -> void:
 	SelectPlayer("res://scenes/Log_character_1.tscn")
+	ChooseCard()
 
 func SelectPlayer(value:String):
 	# Jezeli kliknalem play
@@ -25,7 +26,27 @@ func SelectPlayer(value:String):
 
 func GameStart():
 	Statystki = Staty.new()
-
+	   
 func AddStatsToCharacter():
 	Statystki.MaxHp = DataBase.Data[Postac]["Hp"]
 	Statystki.Hp = Statystki.MaxHp
+
+func ChooseCard():
+	RandomCards()
+
+func RandomCards():
+	var available:Array = []
+	var chosen:Array = []
+	for upgrade in DataBase.Upgrades:
+		if DataBase.Upgrades[upgrade]["lvl"] == 5:
+			pass
+		available.append(upgrade)
+	var count = min(3, available.size())
+	while chosen.size() < count:
+		var pick = available[
+			randi() % available.size()
+			]
+		if pick not in chosen:
+			chosen.append(pick)
+	
+	return chosen

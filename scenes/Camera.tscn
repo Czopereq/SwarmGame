@@ -4,7 +4,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_a34r7"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -137.62643, -89.950615, 0, 0, 0, 0, 110.10567, -90.92592, 0, 0, 0, 0, 110.10567, 96.33334, 0, 0, 0, 0, -138.52077, 97.30865, 0, 0, 0, 0, -137.62643, -89.950615)
+"points": PackedVector2Array(0, 0, 0, 0, -115.26794, -77.2716, 0, 0, 0, 0, 91.32453, -77.2716, 0, 0, 0, 0, 91.32453, 73.901245, 0, 0, 0, 0, -115.26794, 73.901245, 0, 0, 0, 0, -115.26794, -74.34567)
 }
 point_count = 5
 
@@ -18,8 +18,8 @@ curve = SubResource("Curve2D_a34r7")
 script = ExtResource("1_fgi2k")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(-38.131332, 96.91485)
-rotation = 3.1376698
+position = Vector2(-115.26794, 55.03452)
+rotation = -1.5707964
 progress = 583.23035
 
 [node name="Timer" type="Timer" parent="Path2D"]

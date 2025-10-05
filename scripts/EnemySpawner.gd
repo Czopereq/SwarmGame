@@ -10,7 +10,6 @@ func _ready() -> void:
 	$Timer.start()
 
 func _on_timer_timeout() -> void:
-	print("ene")
 	var enemi = EnemyScene.instantiate()
 	$PathFollow2D.progress_ratio = randf()
 	enemi.global_position = $PathFollow2D.global_position

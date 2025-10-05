@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://vawxnlk1g0j1"]
+
+[ext_resource type="Texture2D" uid="uid://dkreldacwmbc4" path="res://Resources/images/card_deck.png" id="1_oo23r"]
+[ext_resource type="Texture2D" uid="uid://csgrkap46l4r3" path="res://Resources/items/axe.png" id="2_8ttwg"]
+
+[node name="TextureRect" type="TextureRect"]
+texture_filter = 1
+custom_minimum_size = Vector2(431, 648)
+offset_right = 431.0
+offset_bottom = 648.0
+texture = ExtResource("1_oo23r")
+stretch_mode = 5
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+custom_minimum_size = Vector2(431, 648)
+layout_mode = 0
+offset_right = 398.0
+offset_bottom = 648.0
+alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="BoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 135.5)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(269, 404)
+layout_mode = 2
+
+[node name="Control" type="Control" parent="BoxContainer/VBoxContainer2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BoxContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="IMG" type="TextureRect" parent="BoxContainer/VBoxContainer2/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+texture = ExtResource("2_8ttwg")
+
+[node name="UPGRADE" type="Label" parent="BoxContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Upgrade"
+horizontal_alignment = 1
+
+[node name="Control2" type="Control" parent="BoxContainer/VBoxContainer2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="DESCRIPTION" type="Label" parent="BoxContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Na ile"
+horizontal_alignment = 1
